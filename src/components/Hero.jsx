@@ -1,7 +1,7 @@
-import pp_suit from '../assets/images/pp_suit.jpg';
+import ProfilePhoto from '../assets/images/pp_suit.jpg';
 const Hero = () => {
   return (
-    <section className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden'>
+    <section className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden lg:pb-2'>
         <div className="container mx-auto h-full">
             <div className="flex items-center h-full pt-8">
                 {/* left side */}
@@ -15,7 +15,7 @@ const Hero = () => {
                 </div>
                 {/* right side */}
                 <div className="hidden lg:flex flex-1 justify-end items-end h-full">
-                    <img src={pp_suit} alt="my profile photo"  className='rounded-3xl' />
+                    <img src={ProfilePhoto} alt="my profile photo"  className='rounded-3xl' />
                 </div>
                 
             </div>
