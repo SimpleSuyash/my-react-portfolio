@@ -19,7 +19,7 @@ const About = () => {
               <p className="text-accent">Javascript Web Developer</p>
               <hr className=" mb-8 opacity-25" />
               <p className="mb-8 text-center lg:text-justify">
-                Hi, I’m Suyash Maharjan. Originally from Nepal, I now live in
+                Hi, I'm Suyash Maharjan. Originally from Nepal, I now live in
                 Tallawong, NSW. I'm a dad of two little boys 😊, and although I'm
                 not sure if coding can be considered a hobby, I absolutely love
                 it. When I'm not coding, I enjoy reading high fantasy books,
