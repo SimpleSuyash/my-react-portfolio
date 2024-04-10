@@ -34,7 +34,7 @@ const About = () => {
               </p>
             </div>
             <div className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
-              Contact Me
+              Download My Resume
             </div>
           </div>
         </div>
