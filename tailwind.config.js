@@ -31,6 +31,11 @@ export default {
         // paragraph: '#878e99',
         paragraph: '#78716c',
       },
+      content: {
+        about: 'url("/src/assets/images/outline-text/about.svg")',
+        portfolio: 'url("/src/assets/images/outline-text/portfolio.svg")',
+        contact: 'url("/src/assets/images/outline-text/contact.svg")',
+      },
 
     },
   },
