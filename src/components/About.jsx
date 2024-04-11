@@ -3,7 +3,7 @@ import FullPhoto from "../assets/images/full_photo.jpg";
 
 const About = () => {
   return (
-    <section className="section bg-secondary ">
+    <section id="about" className="section bg-secondary ">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-24">
           <img
@@ -33,9 +33,9 @@ const About = () => {
                 and edX, with the hope that it will help me secure a coding job.
               </p>
             </div>
-            <div className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
+            <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
               Download My Resume
-            </div>
+            </button>
           </div>
         </div>
       </div>
