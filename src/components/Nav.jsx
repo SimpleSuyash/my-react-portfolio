@@ -8,7 +8,7 @@ const Nav = () => {
     <nav>
       <ul className='flex space-x-8 capitalize text-base'>
         {navigation.map((navItem, index) => (
-          <li key={index} className='text-white hover:accent cursor-pointer'>
+          <li key={index} className='text-white hover:text-accent cursor-pointer'>
             <Link
               activeClass='active'
               to={navItem.href}
