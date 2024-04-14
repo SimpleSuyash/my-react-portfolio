@@ -25,11 +25,12 @@ export default {
         //secondary: '#1C1D24',
         secondary: '#14161A',
         //tertiary: '#131419',
-        tertiary: '#0E1013',
+        tertiary: '#0c0908',
         accent: {
           DEFAULT: '#ac6b34',
           hover: '#925a2b',
         },
+        leather: '#0b0806',
         // paragraph: '#878e99',
         paragraph: '#78716c',
       },
