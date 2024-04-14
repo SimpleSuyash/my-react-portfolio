@@ -12,7 +12,7 @@ const Footer = () => {
                     socialIcons.map(({icon, url}, index) => {
                         // const {icon, url}  = item;
                         return (
-                            <a key={index} href = {url} className=' text-2xl hover:opacity-85'>    
+                            <a key={index} href = {url} target="_blank" className=' text-2xl hover:opacity-85'>    
                                 {icon}  
                             </a>
                         )
