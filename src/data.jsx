@@ -51,7 +51,7 @@ export const navigation = [
   },
   {
     name: "resume",
-    href: "resume",
+    href: "http://docs.google.com/gview?url=https://simplesuyash.github.io/my-react-portfolio/src/assets/docs/Suyash-Resume-2021.docx&embedded=true",
   },
 ];
 // skill
