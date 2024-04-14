@@ -33,6 +33,7 @@ export default {
         leather: '#0b0806',
         // paragraph: '#878e99',
         paragraph: '#78716c',
+        blackperl: '#0e1013',
       },
       content: {
         about: 'url("/src/assets/images/outline-text/about.svg")',
