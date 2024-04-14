@@ -4,7 +4,7 @@ import FullPhoto from "../assets/images/full_photo.jpg";
 const About = () => {
   const clickHandler = () => {
     window.open(
-      "http://docs.google.com/gview?url=https://simplesuyash.github.io/my-react-portfolio/src/assets/docs/Suyash-Resume-2021.docx&embedded=true"
+      "http://docs.google.com/gview?url=https://simplesuyash.github.io/my-portfolio/assets/docs/Suyash-Resume-2021.docx&embedded=true"
     );
   };
   return (
