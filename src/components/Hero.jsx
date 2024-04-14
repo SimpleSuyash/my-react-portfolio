@@ -1,5 +1,10 @@
 import ProfilePhoto from '../assets/images/pp_suit.jpg';
 const Hero = () => {
+    const clickhandler = () => {
+        //send mail
+        window.open('mailto:suyash@y7mail.com');
+    }
+
   return (
     <section id='home' className='lg:h-[85vh] flex items-center bg-primary lg:bg-cover lg:bg-center lg:bg-no-repeat py-32 lg:py-0 overflow-hidden lg:pb-2'>
         <div className="container mx-auto h-full">
@@ -11,13 +16,12 @@ const Hero = () => {
                     <p className='pt-4 pb-8 md:pt-6 md:pb-12 max-w-[480px] text-lg  text-center lg:text-left '>
                         I have a passion for creating beautiful and functional websites. I have knowledge of both front-end and back-end development, and I am always looking to learn new technologies and improve my skills. I am currently seeking new opportunities to work on exciting projects and collaborate with other developers.
                     </p>
-                    <button className='btn btn-sm bg-accent hover:bg-accent-hover md:btn-md transition-all'>Contact Me</button>
+                    <button className='btn btn-sm bg-accent hover:bg-accent-hover md:btn-md transition-all' onClick={clickhandler}>Contact Me</button>
                 </div>
                 {/* right side */}
                 <div className="hidden lg:flex flex-1 justify-end items-end h-full">
                     <img src={ProfilePhoto} alt="my profile photo"  className='rounded-3xl' />
                 </div>
-                
             </div>
         </div>
     </section>
