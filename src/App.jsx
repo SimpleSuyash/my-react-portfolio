@@ -4,6 +4,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio'; 
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Skills/>
       <Portfolio/>
       <Contact/>
-      <div style={{height: '2000px'}}> </div>
+      <Footer/>
     </>
   )
 }

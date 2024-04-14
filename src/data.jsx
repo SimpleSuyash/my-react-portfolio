@@ -28,7 +28,7 @@ import ProjectImg15 from "./assets/images/projects/social-network-api.png";
 import ProjectImg16 from "./assets/images/projects/pwa-text-editor.png";
 
 //icons
-import { FaGithub} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaStackOverflow} from "react-icons/fa";
 import {FiMail, FiMapPin } from "react-icons/fi";
 
 // navigation
@@ -262,5 +262,20 @@ export const contact = [
     title: "Current Location",
     subtitle: "Sydney, Australia",
     description: "Ready to serve clients worldwide"
+  }
+];
+
+export const socialIcons = [
+  {
+    icon: <FaGithub />,
+    url: "https://github.com/SimpleSuyash"
+  },
+  {
+    icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/suyash-maharjan-205044304/"
+  },
+  {
+    icon: <FaStackOverflow />,
+    url: "https://stackoverflow.com/users/24322095/suyash-maharjan"
   }
 ];
