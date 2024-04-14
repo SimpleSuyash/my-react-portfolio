@@ -2,6 +2,11 @@ import React from "react";
 import FullPhoto from "../assets/images/full_photo.jpg";
 
 const About = () => {
+  const clickHandler = () => {
+    window.open(
+      "http://docs.google.com/gview?url=https://simplesuyash.github.io/my-react-portfolio/src/assets/docs/Suyash-Resume-2021.docx&embedded=true"
+    );
+  };
   return (
     <section id="about" className="section bg-secondary ">
       <div className="container mx-auto">
@@ -19,21 +24,13 @@ const About = () => {
               <p className="text-accent">Javascript Web Developer</p>
               <hr className=" mb-8 opacity-25" />
               <p className="mb-8 text-center lg:text-justify">
-                Hi, I'm Suyash Maharjan. Originally from Nepal, I now live in
-                Tallawong, NSW. I'm a dad of two little boys 😊, and although I'm
-                not sure if coding can be considered a hobby, I absolutely love
-                it. When I'm not coding, I enjoy reading high fantasy books,
-                walking and strolling. Currently, I work full-time at
-                the South Eastern Local Health District as a Patient Services
-                Assistant. I hold a Bachelor's degree of IT with major in software application development.
+                Hi, I'm Suyash Maharjan. Originally from Nepal, I now live in Tallawong, NSW. I'm a dad of two little boys 😊, and although I'm not sure if coding can be considered a hobby, I absolutely love it. When I'm not coding, I enjoy reading high fantasy books, walking and strolling. Currently, I work full-time at the South Eastern Local Health District as a Patient Services Assistant. I hold a Bachelor's degree of IT with major in software application development.
               </p>
               <p className="mb-8 text-center lg:text-justify">
-                Additionally, I'm participating in a Web Development coding
-                bootcamp collaboratively provided by the University of Sydney
-                and edX, with the hope that it will help me secure a coding job.
+                Additionally, I'm participating in a Web Development coding bootcamp collaboratively provided by the University of Sydney and edX, with the hope that it will help me secure a coding job.
               </p>
             </div>
-            <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all">
+            <button className="btn btn-md bg-accent hover:bg-accent-hover transition-all" onClick = {clickHandler}>
               Download My Resume
             </button>
           </div>
