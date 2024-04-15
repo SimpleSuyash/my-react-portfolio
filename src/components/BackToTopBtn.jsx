@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 
 //import icon
@@ -26,7 +26,6 @@ const BackToTopBtn = () => {
     const scrollToTop = () => {
         scroll.scrollToTop();
     }
-    console.log(isVisible);
     return(
         isVisible && (
             <button onClick={scrollToTop} className='bg-accent size-12 hover:bg-accent-hover text-white rounded-full fixed right-24 bottom-24 cursor-pointer flex
