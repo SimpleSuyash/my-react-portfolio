@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import { socialIcons } from '../data'
 
 const Footer = () => {

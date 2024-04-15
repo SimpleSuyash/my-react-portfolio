@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import {contact} from '../data'
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
             <div className="flex flex-col items-center text-center">
                 <h2 className=" section-title before:content-contact relative before:absolute before:opacity-25 before:-top-7 before:-left-40 before:hidden before:lg:block">Contact Me</h2>
                 <p className="subtitle">
-                    If you have any questions or need clarification regarding the source code of any of the repositories, please don't hesitate to ask. I'm here to assist! 👩‍💻
+                    If you have any questions or need clarification regarding the source code of any of the repositories, please don&apos;t hesitate to ask. I&apos;m here to assist! 👩‍💻
                 </p>
             </div>
 

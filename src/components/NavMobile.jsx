@@ -18,21 +18,24 @@ const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   //framer motion variants
+  //for circle overlay
   const circleVariants = {
     hidden: {
-      opacity: 0,
+      // opacity: 0,
       scale: 0,
     },
     visible: {
-      opacity: 1,
+      // opacity: 1,
       scale: 180,
       transition: {
         type: "spring",
-        stiffness: 160,
+        stiffness: 140,
         damping: 60,
       },
     },
   };
+
+  //for ul component
   const ulVariants = {
     hidden: {
       opacity: 0,
@@ -40,7 +43,7 @@ const NavMobile = () => {
     visible: {
       opacity: 1,
       transition: {
-        delay: 0.1,
+        delay: 0.2,
       },
     },
   };
@@ -49,7 +52,7 @@ const NavMobile = () => {
       {/* menu icon */}
       <div className="cursor-pointer text-white">
         <Bars3BottomRightIcon
-          className="h-8 w-8"
+          className="size-8"
           onClick={() => setIsOpen(!isOpen)}
         />
       </div>
@@ -59,7 +62,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
-        className="bg-accent w-4 h-4 rounded-full fixed top-0 right-0"
+        className="bg-accent size-4 rounded-full fixed top-0 right-0"
       ></motion.div>
 
       {/* menu */}
@@ -73,7 +76,7 @@ const NavMobile = () => {
       >
         <div className="cursor-pointer absolute top-8 right-8">
           <XMarkIcon
-            className="h-8 w-8 text-white"
+            className="size-8 text-white"
             onClick={() => setIsOpen(false)}
           />
         </div>
