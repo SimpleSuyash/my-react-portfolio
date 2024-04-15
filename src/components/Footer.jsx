@@ -21,7 +21,7 @@ const Footer = () => {
             </div>
 
             {/* copyright  */}
-            <div className="lg:text-right text-paragraph italic mr-4">
+            <div className="lg:text-right text-paragraph italic mr-4 text-sm">
                 &copy; 2024 Suyash Maharjan. All rights reserved.
             </div>
            

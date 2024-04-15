@@ -8,6 +8,14 @@ import SkillImg6 from "./assets/images/skills/git.png";
 import SkillImg7 from "./assets/images/skills/mysql.png";
 import SkillImg8 from "./assets/images/skills/mongodb.png";
 import SkillImg9 from "./assets/images/skills/reactjs.png";
+import SkillImg10 from "./assets/images/skills/expressjs.png";
+import SkillImg11 from "./assets/images/skills/mongoose.png";
+import SkillImg12 from "./assets/images/skills/webpack.png";
+import SkillImg13 from "./assets/images/skills/jest.png";
+import SkillImg14 from "./assets/images/skills/postman.png";
+import SkillImg15 from "./assets/images/skills/sequelize.png";
+import SkillImg16 from "./assets/images/skills/graphql.png";
+import SkillImg17 from "./assets/images/skills/jquery.png";
 
 //project images
 import ProjectImg1 from "./assets/images/projects/code-snippet-manager.png";
@@ -51,7 +59,7 @@ export const navigation = [
   },
   {
     name: "resume",
-    href: "http://docs.google.com/gview?url=https://simplesuyash.github.io/my-portfolio/assets/docs/Suyash-Resume-2021.docx&embedded=true",
+    href: "resume",
   },
 ];
 // skill
@@ -59,39 +67,89 @@ export const skills = [
   {
     image: SkillImg1,
     name: "HTML5",
+    tech: "frontend",
   },
   {
     image: SkillImg2,
     name: "CSS3",
+    tech: "frontend",
   },
   {
     image: SkillImg3,
     name: "Tailwind CSS",
+    tech: "frontend",
   },
   {
     image: SkillImg4,
     name: "JavaScript",
+    tech: "frontend",
   },
   {
     image: SkillImg5,
-    name: "Node.js",
+    name: "NodeJS",
+    tech: "backend",
   },
   {
     image: SkillImg6,
     name: "Git",
+    tech: "neither",
   },
   {
     image: SkillImg7,
     name: "MySQL",
+    tech: "backend",
   },
   {
     image: SkillImg8,
     name: "MongoDB",
+    tech: "backend",
   },
   {
     image: SkillImg9,
-    name: "React.js",
+    name: "ReactJS",
+    tech: "backend",
   },
+  {
+    image: SkillImg10,  
+    name: "ExpressJS",
+    tech: "backend",
+  }
+  ,
+  {
+    image: SkillImg11,  
+    name: "Mongoose",
+    tech: "backend",
+  },
+  {
+    image: SkillImg12,  
+    name: "Webpack",
+    tech: "neither",
+  },
+  {
+    image: SkillImg13,  
+    name: "Jest",
+    tech: "neither",
+  },
+  {
+    image: SkillImg14,  
+    name: "Postman",
+    tech: "neither",
+  },
+  {
+    image: SkillImg15,  
+    name: "Sequelize",
+    tech: "backend",
+  },
+  {
+    image: SkillImg16,  
+    name: "GraphQL",
+    tech: "backend",
+  },
+  {
+    image: SkillImg17,  
+    name: "jQuery",
+    tech: "frontend",
+  }
 ];
 
 //project category
