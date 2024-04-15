@@ -20,6 +20,7 @@ export default {
       xl: '1280px',
     },
     extend: {
+      display: ["group-hover"],
       colors: {
         primary: '#050402',
         //secondary: '#1C1D24',
@@ -40,6 +41,7 @@ export default {
         portfolio: 'url("/src/assets/images/outline-text/portfolio.svg")',
         contact: 'url("/src/assets/images/outline-text/contact.svg")',
       },
+      
 
     },
   },

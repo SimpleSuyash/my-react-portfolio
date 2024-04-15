@@ -174,7 +174,8 @@ export const projectsData = [
     name: "Code Snippet Manager",
     category: "Frontend",
     image: ProjectImg1,
-    link: "https://simplesuyash.github.io/code-snippet/",
+    repo: "https://github.com/SimpleSuyash/code-snippet",
+    live:"https://simplesuyash.github.io/code-snippet/",
     description: "A code snippet manager built using HTML, CSS",
   },
   {
@@ -182,7 +183,8 @@ export const projectsData = [
     name: "Password Generator",
     category: "Frontend",
     image: ProjectImg2,
-    link: " https://github.com/SimpleSuyash/password-generator/",
+    repo: " https://github.com/SimpleSuyash/password-generator/",
+    live:"https://simplesuyash.github.io/password-generator/",
     description:
       "A simple password generator built using HTML, CSS, and JavaScript",
   },
@@ -191,7 +193,8 @@ export const projectsData = [
     name: "Coding Quiz",
     category: "Frontend",
     image: ProjectImg3,
-    link: "https://github.com/SimpleSuyash/js-quiz",
+    repo: "https://github.com/SimpleSuyash/js-quiz",
+    live:"https://simplesuyash.github.io/js-quiz/",
     description: "A coding quiz built using HTML, CSS, and JavaScript",
   },
   {
@@ -199,7 +202,8 @@ export const projectsData = [
     name: "Workday Scheduler",
     category: "Frontend",
     image: ProjectImg4,
-    link: "https://github.com/SimpleSuyash/work-day-scheduler/",
+    repo: "https://github.com/SimpleSuyash/work-day-scheduler/",
+    live:"https://simplesuyash.github.io/work-day-scheduler/",
     description:
       "A simple workday scheduler built using HTML, CSS, and JavaScript",
   },
@@ -208,7 +212,8 @@ export const projectsData = [
     name: "Workday Planner",
     category: "Frontend",
     image: ProjectImg5,
-    link: "https://github.com/SimpleSuyash/work-day-planner",
+    repo: "https://github.com/SimpleSuyash/work-day-planner",
+    live:"https://simplesuyash.github.io/work-day-planner/",
     description:
       "A simple workday scheduler built using HTML, CSS, and JavaScript",
   },
@@ -217,7 +222,8 @@ export const projectsData = [
     name: "Weather Dashboard",
     category: "Frontend",
     image: ProjectImg6,
-    link: " https://github.com/SimpleSuyash/weather-dashboard",
+    repo: "https://github.com/SimpleSuyash/weather-dashboard",
+    live:"https://simplesuyash.github.io/weather-dashboard/",
     description: "A weather app built using HTML, CSS, and JavaScript",
   },
   {
@@ -225,7 +231,8 @@ export const projectsData = [
     name: "The Universtiy of Gaming",
     category: "Frontend",
     image: ProjectImg7,
-    link: " https://github.com/Yukitoshi12345/The-University-of-Gaming",
+    repo: " https://github.com/Yukitoshi12345/The-University-of-Gaming",
+    live:"https://yukitoshi12345.github.io/The-University-of-Gaming/",
     description: "A gaming website built using HTML, CSS, and JavaScript",
   },
   {
@@ -233,7 +240,8 @@ export const projectsData = [
     name: "Readme Generator",
     category: "Backend",
     image: ProjectImg8,
-    link: "https://github.com/SimpleSuyash/readme-generator",
+    repo: "https://github.com/SimpleSuyash/readme-generator",
+    live: "",
     description: "A readme generator built using Node.js and Inquirer",
   },
   {
@@ -241,7 +249,8 @@ export const projectsData = [
     name: "Logo Generator",
     category: "Backend",
     image: ProjectImg9,
-    link: "https://github.com/SimpleSuyash/logo-generator",
+    repo: "https://github.com/SimpleSuyash/logo-generator",
+    live: "",
     description:
       "A logo generator built using Node.js and Inquirer, and tested using Jest",
   },
@@ -250,7 +259,8 @@ export const projectsData = [
     name: "Note Taker",
     category: "Backend",
     image: ProjectImg10,
-    link: "https://github.com/SimpleSuyash/note-taker",
+    repo: "https://github.com/SimpleSuyash/note-taker",
+    live:"https://simplesuyash-note-taker-b716f2594d24.herokuapp.com/",
     description: "A note taker built using Node.js and Express.js",
   },
   {
@@ -258,7 +268,8 @@ export const projectsData = [
     name: "Employee Tracker",
     category: "Backend",
     image: ProjectImg11,
-    link: "https://github.com/SimpleSuyash/employee-tracker",
+    repo: "https://github.com/SimpleSuyash/employee-tracker",
+    live:"",
     description: "An employee tracker built using Node.js, Inquirer and MySQL",
   },
   {
@@ -266,7 +277,8 @@ export const projectsData = [
     name: "E-commerce ORM",
     category: "Backend",
     image: ProjectImg12,
-    link: "https://github.com/SimpleSuyash/ecommerce-orm",
+    repo: "https://github.com/SimpleSuyash/ecommerce-orm",
+    live:"",
     description:
       "An e-commerce ORM built using Node.js, Express.js, MySQL, and Sequelize",
   },
@@ -275,7 +287,8 @@ export const projectsData = [
     name: "The Tech Blog",
     category: "Full Stack",
     image: ProjectImg13,
-    link: "https://github.com/SimpleSuyash/the-tech-blog",
+    repo: "https://github.com/SimpleSuyash/the-tech-blog",
+    live:"https://simplesuyash-tech-blog-97da35edb183.herokuapp.com/",
     description:
       "A tech blog built using Node.js, Express.js, MySQL, and Handlebars",
   },
@@ -284,7 +297,8 @@ export const projectsData = [
     name: "Lets Brag",
     category: "Full Stack",
     image: ProjectImg14,
-    link: "https://github.com/Yukitoshi12345/Lets-Brag",
+    repo: "https://github.com/Yukitoshi12345/Lets-Brag",
+    live:"https://lets-brag-b258984e3793.herokuapp.com/",
     description:
       "A social media app built using Node.js, Express.js, MySQL, and Handlebars",
   },
@@ -293,7 +307,8 @@ export const projectsData = [
     name: "Social Network API",
     category: "Backend",
     image: ProjectImg15,
-    link: "https://github.com/SimpleSuyash/social-network-api",
+    repo: "https://github.com/SimpleSuyash/social-network-api",
+    live:"",
     description:
       "A social network API built using Node.js, Express.js, MongoDB and Mongoose",
   },
@@ -302,7 +317,8 @@ export const projectsData = [
     name: "PWA Text Editor",
     category: "Backend",
     image: ProjectImg16,
-    link: "https://github.com/SimpleSuyash/PWA-text-editor",
+    repo: "https://github.com/SimpleSuyash/PWA-text-editor",
+    live:"https://pwa-text-editor-arc0.onrender.com/",
     description:
       "A PWA text editor built using Node.js, Express.js, IndexedDB, and Service Worker",
   },
