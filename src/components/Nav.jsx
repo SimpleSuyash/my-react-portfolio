@@ -12,23 +12,19 @@ const Nav = () => {
             key={index}
             className="text-white hover:text-accent cursor-pointer"
           >
-            {navItem.name === "resume" ? (
-              <a href={navItem.href} target="_blank" rel="noreferrer">
-                {navItem.name}
-              </a>
-            ) : (
-              <Link
-                activeClass="active"
-                to={navItem.href}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                className="transition-all duration-300"
-              >
-                {navItem.name}
-              </Link>
-            )}
+          
+            <Link
+              activeClass="active"
+              to={navItem.href}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              className="transition-all duration-300"
+            >
+              {navItem.name}
+            </Link>
+
           </li>
         ))}
       </ul>
