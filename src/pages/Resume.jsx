@@ -24,7 +24,7 @@ const Resume = () => {
         <Skills stack={"frontend"} />
         <Skills stack={"backend"} />
         <Skills stack={"neither"} />
-        <div className="flex justify-center my-5">
+        <div className="flex justify-center my-5 md:my-24">
           <button
             className="btn btn-md bg-accent hover:bg-accent-hover transition-all min-w-fit"
             onClick={clickHandler}
