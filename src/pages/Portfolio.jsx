@@ -3,7 +3,7 @@ import Projects from "../components/UI/Project/Projects";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section bg-primary min-h-[100vh] ">
+    <section id="portfolio" className="section bg-primary">
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center mb-6">
           <h2 className="section-title before:content-portfolio relative before:absolute before:opacity-25 before:-top-[2rem] before:-left-3/4 before:hidden before:lg:block">

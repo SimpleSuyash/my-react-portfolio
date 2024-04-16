@@ -3,8 +3,6 @@ import { contact } from "../data";
 import { validateEmail } from "../utils/helpers";
 import emailjs from "@emailjs/browser";
 
-
-
 const Contact = () => {
   // Create state variables for the fields in the form
   // We are also setting their initial values to an empty string
@@ -22,32 +20,32 @@ const Contact = () => {
   const handleInputBlur = (e) => {
     switch (e.target.name) {
       case "email":
-        if(!email){
+        if (!email) {
           setErrorMessage("Email is required");
-        }else if(!validateEmail(email)){
+        } else if (!validateEmail(email)) {
           setErrorMessage("Invalid email");
-        }else{
+        } else {
           setErrorMessage("");
         }
         break;
       case "name":
-        if(!name){
+        if (!name) {
           setErrorMessage("Name is required");
-        }else{
+        } else {
           setErrorMessage("");
         }
         break;
       case "message":
-        if(!message){
+        if (!message) {
           setErrorMessage("Message is required");
-        }else{
+        } else {
           setErrorMessage("");
         }
         break;
       default:
         break;
     }
-  }
+  };
   //based on the name of the input field, update the corresponding state variable
   const handleInputChange = (e) => {
     switch (e.target.name) {
@@ -71,30 +69,40 @@ const Contact = () => {
   // Handle the form submission
   const handleFormSubmit = async (e) => {
     e.preventDefault();
-    try{
-        const result = await emailjs.sendForm(SERVICE_ID,TEMPLATE_ID, form.current, USER_ID)
-        if(result.text === "OK"){
-          alert("Message received successfully!\nThank you for reaching out to me. I will get back to you as soon as possible.📧🙏");
-          setEmail("");
-          setName("");
-          setSubject("");
-          setMessage("");
-        }
-    }catch(err){
-        console.log(err.text);
-        alert("An error occurred, Please try again later");
+    try {
+      const result = await emailjs.sendForm(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        form.current,
+        USER_ID
+      );
+      if (result.text === "OK") {
+        alert(
+          "Message received successfully!\nThank you for reaching out to me. I will get back to you as soon as possible.📧🙏"
+        );
+        setEmail("");
+        setName("");
+        setSubject("");
+        setMessage("");
+      }
+    } catch (err) {
+      console.log(err.text);
+      alert("An error occurred, Please try again later");
     }
   };
 
   return (
-    <section className="section bg-leather h-[100vh] flex  items-center justify-center" id="contact" >
+    <section
+      className="section bg-leather"
+      id="contact"
+    >
       {/* section title  */}
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
           <h2 className=" section-title before:content-contact relative before:absolute before:opacity-25 before:-top-7 before:-left-40 before:hidden before:lg:block">
             Contact Me
           </h2>
-          <p className="subtitle">
+          <p className="text-paragraph mb-4 lg:mb-12 max-w-[800px]">
             If you have any questions or need clarification regarding the source
             code of any of the repositories, please don&apos;t hesitate to ask.
             I&apos;m here to assist! 👩‍💻
@@ -105,7 +113,7 @@ const Contact = () => {
           {/* contact info */}
           <div className="flex flex-1 flex-col items-start space-y-8 mb-12 lg:mb-0 lg:pt-2">
             {contact.map((item, index) => {
-              const { icon, title, subtitle, description } = item;
+              const { icon, title, subtitle, description, link } = item;
               return (
                 <div key={index} className="flex flex-col lg:flex-row gap-x-4">
                   <div className="text-accent rounded-sm w-14 h-14 flex items-start justify-center mt-2 mb-4 lg:mb-0 text-2xl">
@@ -114,7 +122,15 @@ const Contact = () => {
                   <div>
                     <h4 className="font-body text-xl mb-1">{title}</h4>
                     <p className="mb-1">{subtitle}</p>
-                    <p className="text-accent font-normal">{description}</p>
+                    {link ? (
+                      <p className="text-accent font-normal italic">
+                        <a href={link}>{description}</a>
+                      </p>
+                    ) : (
+                      <p className=" font-normal">
+                        {description}
+                      </p>
+                    )}
                   </div>
                 </div>
               );
@@ -122,7 +138,7 @@ const Contact = () => {
           </div>
 
           {/* contact form */}
-          <form ref={form} className="space-y-8 w-full max-w-[780px]">
+          <form ref={form} className="space-y-5 w-full max-w-[780px]">
             <span className="italic text-sm">
               Fields marked with * are required
             </span>
@@ -169,9 +185,7 @@ const Contact = () => {
               type="button"
               className="btn btn-lg bg-accent hover:bg-accent-hover disabled:opacity-50 disabled:bg-gray-700 disabled:cursor-not-allowed transition-all"
               onClick={handleFormSubmit}
-              disabled={
-                !email || !name || !message || !validateEmail(email)
-              }
+              disabled={!email || !name || !message || !validateEmail(email)}
             >
               Send Message
             </button>

@@ -11,8 +11,8 @@ import { XMarkIcon } from "@heroicons/react/16/solid";
 import { motion } from "framer-motion";
 
 //import Link
-//it is used to scroll to the section
-import { Link } from "react-scroll";
+//it is used to navigate to different sections
+import { NavLink } from "react-router-dom";
 
 const NavMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,7 +62,7 @@ const NavMobile = () => {
         variants={circleVariants}
         initial="hidden"
         animate={isOpen ? "visible" : "hidden"}
-        className="bg-accent size-4 rounded-full fixed top-0 right-0"
+        className=" size-4 rounded-full fixed top-0 right-0 bg-slate-600"
       ></motion.div>
 
       {/* menu */}
@@ -82,16 +82,13 @@ const NavMobile = () => {
         </div>
         {navigation.map((item, index) => (
           <li key={index} className="mb-4">
-            <Link
+            <NavLink
               to={item.href}
-              smooth={true}
-              duration={500}
-              offset={-80}
               onClick={() => setIsOpen(false)}
               className=" text-2xl cursor-pointer capitalize"
             >
               {item.name}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </motion.ul>
