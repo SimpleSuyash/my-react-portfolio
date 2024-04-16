@@ -16,7 +16,7 @@ const Skills = ({stack}) => {
             break;  
     }
   return (
-    <div className="container mx-auto flex flex-col items-center justify-center py-5 md:grid md:grid-cols-6 md:my-8">
+    <div className="container mx-auto flex flex-col items-center justify-center py-5 md:grid md:grid-cols-6">
         <h1 className='title max-w-fit md:col-span-1 mb-4 md:mb-0'>{category}</h1>
         <div className='flex flex-wrap justify-center items-center gap-4 md:col-span-5 '>
             {
