@@ -152,7 +152,7 @@ export const skills = [
 //project category
 export const projectsNav = [
   {
-    name: "All",
+    name: "Featured",
   },
   {
     name: "Full Stack",
@@ -162,6 +162,9 @@ export const projectsNav = [
   },
   {
     name: "Backend",
+  },
+  {
+    name: "All",
   },
 ];
 //project data
@@ -193,6 +196,7 @@ export const projectsData = [
     repo: "https://github.com/SimpleSuyash/js-quiz",
     live:"https://simplesuyash.github.io/js-quiz/",
     description: "A coding quiz built using HTML, CSS, and JavaScript",
+    featured: true,
   },
   {
     id: 3,
@@ -213,6 +217,7 @@ export const projectsData = [
     live:"https://simplesuyash.github.io/work-day-planner/",
     description:
       "A simple workday scheduler built using HTML, CSS, and JavaScript",
+    featured: true,
   },
   {
     id: 5,
@@ -222,6 +227,7 @@ export const projectsData = [
     repo: "https://github.com/SimpleSuyash/weather-dashboard",
     live:"https://simplesuyash.github.io/weather-dashboard/",
     description: "A weather app built using HTML, CSS, and JavaScript",
+    featured: true,
   },
   {
     id: 6,
@@ -231,6 +237,7 @@ export const projectsData = [
     repo: " https://github.com/Yukitoshi12345/The-University-of-Gaming",
     live:"https://yukitoshi12345.github.io/The-University-of-Gaming/",
     description: "A gaming website built using HTML, CSS, and JavaScript",
+    featured: true,
   },
   {
     id: 7,
@@ -298,6 +305,7 @@ export const projectsData = [
     live:"https://lets-brag-b258984e3793.herokuapp.com/",
     description:
       "A social media app built using Node.js, Express.js, MySQL, and Handlebars",
+    featured: true,
   },
   {
     id: 14,
@@ -318,6 +326,7 @@ export const projectsData = [
     live:"https://pwa-text-editor-arc0.onrender.com/",
     description:
       "A PWA text editor built using Node.js, Express.js, IndexedDB, and Service Worker",
+    featured: true,
   },
 ];
 

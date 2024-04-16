@@ -3,7 +3,7 @@ import { projectsData, projectsNav } from "../../../data";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
-  const [item, setItem] = useState({ name: "All" });
+  const [item, setItem] = useState({ name: "Featured" });
   const [projects, setProjects] = useState([]);
   const [active, setActive] = useState(0);
 
@@ -11,7 +11,12 @@ const Projects = () => {
     //get projects based on the selected category
     if (item.name === "All") {
       setProjects(projectsData);
-    } else {
+    } else if (item.name === "Featured") {
+      const featuredProjects = projectsData.filter(
+        (project) => project.featured === true
+      );
+      setProjects(featuredProjects);
+    }else {
       const filteredProjects = projectsData.filter(
         (project) => project.category === item.name
       );
