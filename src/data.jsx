@@ -46,7 +46,7 @@ export const navigation = [
     href: "home",
   },
   {
-    name: "about",
+    name: "about me",
     href: "about",
   },
   {
