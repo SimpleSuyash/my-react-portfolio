@@ -1,6 +1,5 @@
 
- [![node.js](https://img.shields.io/badge/Node.js-blue?style=for-the-badge&logo=Node.js&logoColor=white&labelColor=red)](https://nodejs.org/en) [![npm](https://img.shields.io/badge/npm-blue?style=for-the-badge&logo=npm&logoColor=white&labelColor=red)](https://www.npmjs.com/) [![express.js](https://img.shields.io/badge/express-blue?style=for-the-badge&logo=express&logoColor=white&labelColor=red)](https://expressjs.com/) [![mongoose.js](https://img.shields.io/badge/mongoose-blue?style=for-the-badge&logo=mongoose&logoColor=white&labelColor=red)](https://mongoosejs.com/) [![mongodb](https://img.shields.io/badge/mongodb-blue?style=for-the-badge&logo=mongodb&logoColor=white&labelColor=red)](https://www.mongodb.com/) [![day.js](https://img.shields.io/badge/day.js-blue?style=for-the-badge&logo=day.js&logoColor=white&labelColor=red)](https://day.js.org/)
-
+ [![node.js](https://img.shields.io/badge/Node.js-blue?style=for-the-badge&logo=Node.js&logoColor=white&labelColor=red)](https://nodejs.org/en) [![npm](https://img.shields.io/badge/npm-blue?style=for-the-badge&logo=npm&logoColor=white&labelColor=red)](https://www.npmjs.com/) [![react](https://img.shields.io/badge/react-blue?style=for-the-badge&logo=react&logoColor=white&labelColor=red)](https://react.dev/)  [![tailwindcss](https://img.shields.io/badge/tailwindcss-blue?style=for-the-badge&logo=tailwindcss&logoColor=white&labelColor=red)](https://tailwindcss.com/) [![netlify](https://img.shields.io/badge/netlify-blue?style=for-the-badge&logo=netlify&logoColor=white&labelColor=red)](https://react.dev/)
 
 <div align="right"> 
 <a href= "http://www.wtfpl.net/about/"><img src = "https://img.shields.io/badge/License-WTFPL-brightgreen.svg"></a>
@@ -8,25 +7,15 @@
 
 # My React Portfolio  
 
-This app lets users test various APIs of a social network website.
+This project is a personal portfolio webpage that showcases my bio, recent works, and contact information. It is built using React and provides a single-page experience for visitors to learn more about me and my skills. The portfolio includes sections for projects, skills, and a contact form for potential collaborations or inquiries.
 
 ##  Description
 
-With the help of any API client, such as Postman, etc, this app allows us to view a social network site's all users, view a detail information of a particular user, add a new user, delete and update an existing user. Also, it allows us to add a new friend to and delete an existing friend from the friend's list of an user. 
+The project is a personal portfolio webpage built using React. It showcases the my bio, recent works, and contact information. The portfolio provides a single-page experience for visitors to learn more about me and tmy skills. It includes sections for projects, skills, and a contact form for potential collaborations or inquiries.
 
-Similarly, it lets us get all thought posts, get a particular thought post, add a new thought post, update and delete an existing thought post. We also can add a reaction and delete a particular reaction related to the thought post.
+By building this project, I gained experience in React development, including creating components, managing state, and handling user interactions. I also learnt how to structure a single-page application and incorporate different sections and features. Additionally, I have learnt about styling and layout using CSS or a CSS framework.
 
-The thought posts and reactions are related to corresponding user record as the creater of the post and reactor to the post respectively. The endpoints are shown below in the pictures: 
-
-![User routes](./assets/images/image.png)
-
-
-![Thought routes](./assets/images/image-1.png)
-
-By creating this project, I learnt `mongoose`. Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js. It manages relationships between data, provides schema validation, and is used to translate between objects in code and the representation of those objects in MongoDB. The problem that Mongoose aims to solve is allowing developers to enforce a specific schema at the application layer.
-
-Having learnt relational database management system such as `MySQL` earlier in the course, I was used to storing data using tables and rows, where referential integrity is enforced. Through this project, I got to learn a non-relational way of storing data, in this case, in a series of JSON like documents, which are called  binary JSON, or `BSON` in short. 
-
+Overall, building this project provided me with practical experience in React development and web design, as well as an opportunity to showcase my skills and projects to potential clients or employers.
 
 ## Table of Contents
 
@@ -34,49 +23,93 @@ Having learnt relational database management system such as `MySQL` earlier in t
 1. [Usage](#usage)
 1. [Licence](#licence)
 1. [Screenshots](#screenshots)
-1. [Walkthrough Video](#walkthrough-video)
+1. [Live Site Link](#live-site-link)
 
 
 ## Installation 
 
 1. Download and Install the `Node.js` 
-1. Initialize the project 
+2. Initialize the project 
     ```       
     npm init -y
     ```
-1. Install `Express` server
+3. Install `React` library
     ```
-    npm i express
+    npm i react
     ```
-1. Install `day.js` plugin
+4. Install `react dom` plugin
     ```
-    npm i dayjs
+    npm i react-dom
     ```
-1. Install `Mongoose` Object Data Modeling (ODM) library for MongoDB and Node.js.
+5. Install `react router dom` plugin
     ```
-    npm i mongoose
+    npm i react-router-dom
     ```
-1. Following are the optional dev dependencies:
-    - Install `nodemon` to automatically restart the server everytime code changes
+7. Install `@Emailjs/browser` 
+    ```
+    npm i @emailjs/browser
+    ```
+8. Following are the dev dependencies:
+    - Install `@heroicons/react` for beautiful hand-crafted SVG icons, by the makers of Tailwind CSS
         ```
-        npm i -D nodemon
+        npm i -D @heroicons/react
         ```
-    - Install `ESLint` to find problematic patterns or code that doesn't adhere to certain style guidelines
+    - Install `@types/react` 
+        ```
+        npm i -D @types/react
+        ```
+    - Install `@types/react-dom` 
+        ```
+        npm i -D @types/react-dom
+        ```
+    - Install `@vitejs/plugin-react` 
+        ```
+        npm i -D @vitejs/plugin-react
+        ```
+    - Install `autoprefixer` 
+        ```
+        npm i -D autoprefixer
+        ```
+    - Install `eslint` 
         ```
         npm i -D eslint
         ```
-    - Install `Prettier` for code formatting
+    - Install `eslint-plugin-react` 
         ```
-        npm i -D prettier
+        npm i -D eslint-plugin-react
         ```
-    - Install `eslint-config-prettier` to turn off ESLint rules that might clashes with Prettier
+    - Install `eslint-plugin-react-hooks` 
         ```
-        npm i -D eslint-config-prettier
+        npm i -D eslint-plugin-react-hooks
         ```
-
-And the `package.json` file should look like below: 
-
-![package.json](./assets/images/image-2.png)
+    - Install `eslint-plugin-react-refresh` 
+        ```
+        npm i -D eslint-plugin-react-refresh
+        ```
+    - Install `framer-motion` -a simple and powerful JavaScript animation library
+        ```
+        npm i -D framer-motion
+        ```
+    - Install `postcss` 
+        ```
+        npm i -D postcss
+        ```
+    - Install `react-icons` 
+        ```
+        npm i -D react-icons
+        ```
+    - Install `react-scroll` 
+        ```
+        npm i -D react-scroll
+        ```
+    - Install `tailwindcss` 
+        ```
+        npm i -D tailwindcss
+        ```
+    - Install `vite` 
+        ```
+        npm i -D vite
+        ```
 
 ## Usage
 
@@ -86,15 +119,11 @@ If you wish to use this repo,
     ```
     npm i
     ```
-- Again, navigate to root directory, type the following to seed the data
+- Again, navigate to root directory, type the following to open in development mode
     ```
-    npm run seed
+    npm run dev
     ```
-- Start the app
-    ```
-    npm run start   
-    ```
-- Open up any API client like Postman, and test the API endpoints
+    Now it should open my portfolio webpage
 
 
 ## Licence
@@ -105,23 +134,14 @@ This app is licensed under [**WTFPL**](http://www.wtfpl.net/about/)
 
 Screenshot showing the get all users endpoint 
 
-![Get All Users Route](./assets/images/image-3.png)
+![App Preview Page](./src/assets/images/preview.png)
 
-Screenshot showing the get single user endpoint
+## Live Site Link
 
-![Get Single User Route](./assets/images/image-4.png)
-
-Screenshot showing the get all thoughts endpoint
-
-![Get All Thoughts Route](./assets/images/image-5.png)
+[Deployed on Netlify](https://simplesuyash-portfolio.netlify.app/)
 
 
-## Walkthrough Video
 
-https://github.com/SimpleSuyash/social-network-api/assets/149545043/63a75c4a-b558-4e24-a06e-3b00b209c99a
-
-
-https://github.com/SimpleSuyash/social-network-api/assets/149545043/847f5e6a-ab3c-43ef-b236-c661d74b324e
 
 
 
