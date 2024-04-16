@@ -7,7 +7,7 @@ const Resume = () => {
     );
   };
   return (
-    <section className="bg-secondary section py-24  h-[100vh] flex  items-center justify-center" id="resume">
+    <section className="bg-secondary section" id="resume">
 
       <div className="container mx-auto">
       <h2 className="section-title text-center pb-5">
@@ -24,7 +24,7 @@ const Resume = () => {
         <Skills stack={"frontend"} />
         <Skills stack={"backend"} />
         <Skills stack={"neither"} />
-        <div className="flex justify-center my-5 md:my-24">
+        <div className="flex justify-center my-5 md:my-12">
           <button
             className="btn btn-md bg-accent hover:bg-accent-hover transition-all min-w-fit"
             onClick={clickHandler}

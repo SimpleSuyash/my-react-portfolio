@@ -326,13 +326,15 @@ export const contact = [
     icon: <FiMail />,
     title: "Have a question?",
     subtitle: "Please feel free to reach out to me",
-    description: "Email me at suyash@mail.com"
+    description: "Email me at suyash@mail.com",
+    link: "mailto:suyash@y7mail.com"
   },
   {
     icon: <FiMapPin />,
     title: "Current Location",
     subtitle: "Sydney, Australia",
-    description: "Ready to serve clients worldwide"
+    description: "Ready to serve clients worldwide",
+    link:""
   }
 ];
 

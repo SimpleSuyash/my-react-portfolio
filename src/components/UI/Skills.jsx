@@ -23,7 +23,7 @@ const Skills = ({stack}) => {
                 skills.map((skill, index) => (
                     (skill.tech === stack ) && 
                     <div key={index} className='flex flex-col justify-center items-center'>
-                        <img src={skill.image} alt={skill.name} className="size-12 md:size-24" />
+                        <img src={skill.image} alt={skill.name} className="size-12 md:size-20" />
                         <h2 className='text-paragraph text-sm'>{skill.name}</h2>
                     </div>
                 ))

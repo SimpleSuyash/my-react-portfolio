@@ -12,17 +12,7 @@ const Nav = () => {
             key={index}
             className="text-white hover:text-accent cursor-pointer"
           >
-            <NavLink
-              activeClass="active"
-              to={navItem.href}
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className="transition-all duration-300"
-            >
-              {navItem.name}
-            </NavLink>
+            <NavLink to={navItem.href}>{navItem.name}</NavLink>
           </li>
         ))}
       </ul>

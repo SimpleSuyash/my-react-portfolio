@@ -17,7 +17,7 @@
     @apply text-white font-primary;
   }
   .section {
-    @apply py-12 lg:py-32;
+    @apply py-12 lg:py-32 pt-36  min-h-[100vh] flex  items-center justify-center  mb-32 lg:mb-0;
   }
   .section-title {
     @apply text-3xl lg:text-4xl font-medium lg:font-extrabold mb-5;
