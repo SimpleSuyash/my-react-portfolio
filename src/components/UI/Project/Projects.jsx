@@ -1,5 +1,5 @@
 import{ useState, useEffect } from "react";
-import { projectsData, projectsNav } from "../data";
+import { projectsData, projectsNav } from "../../../data";
 import ProjectCard from "./ProjectCard";
 
 const Projects = () => {

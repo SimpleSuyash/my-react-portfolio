@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Nav from "./Nav";
-import NavMobile from "./NavMobile";
+import Nav from "./UI/Navigation/Nav";
+import NavMobile from "./UI/Navigation/NavMobile";
 
 const Header = () => {
   const [bg, setBg] = useState(false);

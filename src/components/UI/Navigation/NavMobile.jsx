@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import { navigation } from "../data";
+import { navigation } from "../../../data";
 
 //import icons
 import { Bars3BottomRightIcon } from "@heroicons/react/16/solid";

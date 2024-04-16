@@ -3,7 +3,7 @@ import { socialIcons } from '../data'
 
 const Footer = () => {
   return (
-    <footer className='bg-blackperl py-8'>
+    <footer className='bg-blackperl py-8 fixed left-0 bottom-0 min-w-full'>
         <div className="flex flex-col lg:flex-row space-y-6 lg:space-y-0 items-center justify-between mx-8">
 
             {/* social icons      */}

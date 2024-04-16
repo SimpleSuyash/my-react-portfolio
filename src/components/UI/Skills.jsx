@@ -1,6 +1,6 @@
 // import React from 'react'
 //import skills data
-import { skills } from '../data'
+import { skills } from '../../data'
 
 const Skills = ({stack}) => {
     let category;

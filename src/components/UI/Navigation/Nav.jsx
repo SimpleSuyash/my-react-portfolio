@@ -1,7 +1,7 @@
 // import React from "react";
 
-import { navigation } from "../data";
-import { Link } from "react-scroll";
+import { navigation } from "../../../data";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -12,8 +12,7 @@ const Nav = () => {
             key={index}
             className="text-white hover:text-accent cursor-pointer"
           >
-          
-            <Link
+            <NavLink
               activeClass="active"
               to={navItem.href}
               spy={true}
@@ -23,8 +22,7 @@ const Nav = () => {
               className="transition-all duration-300"
             >
               {navItem.name}
-            </Link>
-
+            </NavLink>
           </li>
         ))}
       </ul>

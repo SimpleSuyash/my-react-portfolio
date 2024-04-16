@@ -41,25 +41,22 @@ import {FiMail, FiMapPin } from "react-icons/fi";
 
 // navigation
 export const navigation = [
-  {
-    name: "home",
-    href: "home",
-  },
+
   {
     name: "about me",
-    href: "about",
+    href: "/",
   },
   {
     name: "portfolio",
-    href: "portfolio",
+    href: "/portfolio",
   },
   {
     name: "contact",
-    href: "contact",
+    href: "/contact",
   },
   {
     name: "resume",
-    href: "resume",
+    href: "/resume",
   },
 ];
 // skill

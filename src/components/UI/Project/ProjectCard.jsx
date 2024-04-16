@@ -1,5 +1,5 @@
-import GithubIcon from "../assets/images/github.png";
-import AppStoreIcon from "../assets/images/app-store.png";
+import GithubIcon from "../../../assets/images/github.png";
+import AppStoreIcon from "../../../assets/images/app-store.png";
 
 const ProjectCard = ({ project }) => {
   const appClickHandler = () => {

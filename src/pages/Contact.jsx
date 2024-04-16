@@ -87,7 +87,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="section bg-leather" id="contact">
+    <section className="section bg-leather h-[100vh] flex  items-center justify-center" id="contact" >
       {/* section title  */}
       <div className="container mx-auto">
         <div className="flex flex-col items-center text-center">
