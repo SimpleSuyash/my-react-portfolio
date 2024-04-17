@@ -132,7 +132,7 @@ This app is licensed under [**WTFPL**](http://www.wtfpl.net/about/)
 
 ## Screenshots
 
-Screenshot showing the get all users endpoint 
+Preview of the portfolio home page
 
 ![App Preview Page](./src/assets/images/preview.png)
 
